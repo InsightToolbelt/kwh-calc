@@ -1,0 +1,6 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": "{\"watt\": 200, \"hours\": 4, \"kwhPrice\": 0.22 }"
+}

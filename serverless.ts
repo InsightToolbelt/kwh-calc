@@ -1,9 +1,10 @@
 import type { AWS } from '@serverless/typescript';
 
+import calc from '@functions/calc';
 import hello from '@functions/hello';
 
 const serverlessConfiguration: AWS = {
-  service: 'myservice',
+  service: 'kwh-calc',
   frameworkVersion: '2',
   custom: {
     webpack: {
@@ -25,7 +26,7 @@ const serverlessConfiguration: AWS = {
     lambdaHashingVersion: '20201221',
   },
   // import the function via paths
-  functions: { hello },
+  functions: { calc, hello },
 };
 
 module.exports = serverlessConfiguration;
